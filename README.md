@@ -1,5 +1,5 @@
 # EASY CHEF
-• Designed and developed a recipe-sharing social media web app in a team of 3. 
+• Designed and developed a recipe-sharing social media web app in a team of 3 developers. 
 
 • Used React to develop the front end and Django to develop the back end (with SQLite database). 
 
