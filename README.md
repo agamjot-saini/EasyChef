@@ -1,41 +1,31 @@
 # EASY CHEF
+• Designed and developed a recipe-sharing social media web app in a team of 3. 
+• Used React to develop the front end and Django to develop the back end (with SQLite database). 
+• Tested endpoints using Postman. 
 
-# Accounts
+
+## Accounts
 • User sign-up, log-in, log-out, and edit profile functionality (first name, last name, email, avatar, phone number).
 
-# Recipes
+## Recipes
 • Logged-in users can create recipes. A recipe has a name, a set of diets, cuisine, ingredients, serving size, and a list of steps. 
-
 • They can add one or more photos/videos, prep time and cooking time to specific steps or to the overall recipe. 
-
 • Logged-in users can edit or delete a recipe that they created.
-
 • Logged-in users can create a combined shopping list of different recipes (with different serving sizes).
-
 • Users can view all the details of a specific recipe on that recipe's page (including total likes, average rating, and comments). 
-
 • Logged-in users can also add or remove the recipe from their shopping cart.
 
-
-# Search
+## Search
 • Search through recipes by their name, ingredients, or creator.
-
 • Filter recipes based on cuisine, diet, or cooking time.
-
 • Search results sorted based on a combination of overall rating and the number of users who marked them as their favourite.
-
 • Users can view lists of popular recipes (sorted by highest overall rating or most favourited).
 
-
-# Social Media
+## Social Media
 • Logged-in users can rate recipes on a scale of 1 to 5. They can also update their vote later on.
-
 • Logged-in users can also favourite/unfavourite recipes.
-
 • Logged-in users can post comments on recipes (can include one or more pictures/videos).
-
 • Logged-in users can view recipes they created, the recipes they favourited, and the recipes they interacted with (created, liked, rated, or commented on).
-
 
 # RUNNING THE APPLICATION
 
