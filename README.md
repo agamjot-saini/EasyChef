@@ -39,10 +39,10 @@
 
 # RUNNING THE APPLICATION
 
-`1.)` These must be installed on the machine before running the **startup** and **run** scripts: 
+**1.)** These must be installed on the machine before running the **startup** and **run** scripts: 
 `python3.10`, `pip` and `virtualenv` (accessible via `python3.10 -m`), and `Node.js 18`.
 
-`2.)` The **startup** script runs all preparations such as creating the virtual env, pip installing all packages, migrations, npm install, etc. 
+**2.)** The **_startup_** script runs all preparations such as creating the virtual env, pip installing all packages, migrations, npm install, etc. 
 
-`3.)` The **run** script runs both backend and frontend servers. 
+**3.)** The **_run_** script runs both backend and frontend servers. 
 
