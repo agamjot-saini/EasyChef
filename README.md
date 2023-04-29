@@ -53,3 +53,8 @@
 
 **3.)** The **_run_** script runs both backend and frontend servers. 
 
+
+## To manually run the app locally, follow the following steps:
+
+![EasyChefRunningInstructions](https://user-images.githubusercontent.com/65428409/235272796-eb8d5e0c-0ff9-4d54-b56b-ba73bfba811d.png)
+
