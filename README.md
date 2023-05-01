@@ -14,6 +14,8 @@
 
 • They can add one or more photos/videos, prep time and cooking time to specific steps or to the overall recipe. 
 
+• A recipe can be created based on another recipe (all fields are prefilled with the information of that base recipe)
+
 • Logged-in users can edit or delete a recipe that they created.
 
 • Logged-in users can create a combined shopping list of different recipes (with different serving sizes).
