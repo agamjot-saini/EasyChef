@@ -47,17 +47,19 @@
 
 # RUNNING THE APPLICATION
 
-**1.)** These must be installed on the machine before running the **startup** and **run** scripts: 
+**1.)** Clone the repository and navigate to it: `git clone **https://github.com/agamjot-saini/EasyChef.git**`
+
+**2.)** These must be installed on the machine before running the **startup** and **run** scripts: 
 
 **python3.10**, **pip** and **virtualenv** (accessible via `python3.10 -m`), and **Node.js 18**.
 
-**2.)** The **_startup_** script runs all preparations such as creating the virtual env, pip installing all packages, migrations, npm install, etc. 
+**3.)** The **_startup_** script runs all preparations such as creating the virtual env, pip installing all packages, migrations, npm install, etc. 
 
-`source startup.sh`
+Run this command: `source startup.sh`
 
-**3.)** The **_run_** script runs both backend and frontend servers. 
+**4.)** The **_run_** script runs both backend and frontend servers. 
 
-`source run.sh`
+Run this command: `source run.sh`
 
 ## If the above steps don't work, follow these steps to run the app manually:
 
