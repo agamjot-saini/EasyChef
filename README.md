@@ -53,8 +53,11 @@
 
 **2.)** The **_startup_** script runs all preparations such as creating the virtual env, pip installing all packages, migrations, npm install, etc. 
 
+`source startup.sh`
+
 **3.)** The **_run_** script runs both backend and frontend servers. 
 
+`source run.sh`
 
 ## If the above steps don't work, follow these steps to run the app manually:
 
