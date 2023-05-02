@@ -47,7 +47,7 @@
 
 # RUNNING THE APPLICATION
 
-**1.)** Clone the repository and navigate to it: `git clone **https://github.com/agamjot-saini/EasyChef.git**`
+**1.)** Clone the repository and navigate to it: `git clone https://github.com/agamjot-saini/EasyChef.git`
 
 **2.)** These must be installed on the machine before running the **startup** and **run** scripts: 
 
