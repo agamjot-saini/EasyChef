@@ -173,15 +173,9 @@ const HomePage = () => {
                         </Select>
                         </FormControl>
                         </Box>
+                        
                     </div>
 
-                </div>
-
-                <br></br>
-
-                <div style={{display: "flex", justifyContent: "center"}}>
-
-                    <br></br>
                     <div>
                     <Box sx={{ minWidth: 75 }}>
 
@@ -207,15 +201,6 @@ const HomePage = () => {
                     </Box>
 
                     </div>
-
-                </div>
-
-                <br></br>
-
-
-                <div style={{display: "flex", justifyContent: "center"}}>
-
-                    <br></br>
                     <div>
                     <Box sx={{ minWidth: 145 }}>
 
