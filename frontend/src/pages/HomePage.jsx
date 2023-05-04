@@ -10,7 +10,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
+import TextField from '@mui/material/TextField';
 
 
 const HomePage = () => {
@@ -270,11 +270,24 @@ const HomePage = () => {
                 </div>
 
                 <br></br>
+                
+                <Box sx={{ minWidth: 160 }}>
+                <div style={{display: "flex", justifyContent: "center"}}>
 
-                <input style={{display: "flex", textAlign: "center", width: "100%"}}
+                <br></br>
+                <div>
+
+                <TextField label="Search recipes, ingredients, or creators" style={{display: "flex", textAlign: "center", width: "100%"}}
                        type="text" value={search} onChange={(e) => setSearch(e.target.value)}/>
 
                 {recipes.length ? (<RecipeList recipes={recipes}/>) : <div>No Recipes</div>}
+                </div>
+                </div>
+
+                </Box>
+
+
+                <br></br>
 
             </Box>
 
