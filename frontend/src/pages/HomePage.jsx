@@ -6,6 +6,12 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Paper from '@mui/material/Paper';
 import Button from "react-bootstrap/Button";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
+
 
 const HomePage = () => {
     const [recipes, setRecipes] = useState([])
@@ -132,23 +138,62 @@ const HomePage = () => {
 
     }
 
+// export default function BasicSelect() {
+  const [age, setAge] = useState('');
 
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
     return (
         <div>
+            
             <h1 style={{display: "flex", justifyContent: "center"}}>Welcome to EasyChef</h1>
+            
+            {/* <Box sx={{ minWidth: 120 }}>
+                <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
+                    <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={age}
+                    label="Age"
+                    onChange={handleChange}
+                    >
+                    <MenuItem value={10}>Ten</MenuItem>
+                    <MenuItem value={20}>Twenty</MenuItem>
+                    <MenuItem value={30}>Thirty</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box> */}
+
+            
+            
             <Box sx={{width: '100%', bgcolor: 'background.paper'}}>
 
                 <h3 style={{display: "flex", justifyContent: "center"}}>Search Recipes</h3>
 
                 <div style={{display: "flex", justifyContent: "center"}}>
 
-                    <h4>Cuisine Filters:</h4>
-                    <br></br>
+                    {/* <h4>Cuisine Filters:</h4> */}
+                    {/* <br></br> */}
                     <div>
-                        {cuisines?.map(cui => (<Button key={cui.id} value={cui.id} onClick={() => {
-                            console.log(cui.id, "CUISINE")
-                            handleCuisineSelect(cui.id)
-                        }}>{cui.name}</Button>))}
+                        <Box sx={{ minWidth: 120 }}>
+
+                        <FormControl fullWidth>
+                        <InputLabel id="demo-simple-select-label">Cuisine</InputLabel>
+
+                        <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        // value={age}
+                        label="Cuisine">
+                            {cuisines?.map(cui => (<MenuItem key={cui.id} value={cui.id} onClick={() => {
+                                console.log(cui.id, "CUISINE")
+                                handleCuisineSelect(cui.id)
+                            }}>{cui.name}</MenuItem>))}
+                        </Select>
+                        </FormControl>
+                        </Box>
                     </div>
 
                 </div>
@@ -157,13 +202,32 @@ const HomePage = () => {
 
                 <div style={{display: "flex", justifyContent: "center"}}>
 
-                    <h4>Diet Filters:</h4>
                     <br></br>
                     <div>
-                        {diets?.map(diet => (<Button key={diet.id} value={diet.id} onClick={() => {
-                            console.log(diet.id, " DIET")
+                    <Box sx={{ minWidth: 120 }}>
+
+                    <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Diet</InputLabel>
+
+                    <Select
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        // value={age}
+                        label="Diet">
+
+                        {/* {diets?.map(d => <MenuItem value="">
+                            <em>All</em>
+                            {searchRecipes()}
+                        </MenuItem>)} */}
+
+                        {diets?.map(diet => (<MenuItem key={diet.id} value={diet.id} onClick={() => {
+                            console.log(diet.id, "DIET")
                             handleDietSelect(diet.id)
-                        }}>{diet.name}</Button>))}
+                        }}>{diet.name}</MenuItem>))}
+                    </Select>
+                    </FormControl>
+                    </Box>
+
                     </div>
 
                 </div>
@@ -173,19 +237,34 @@ const HomePage = () => {
 
                 <div style={{display: "flex", justifyContent: "center"}}>
 
-                    <h4>Cooking Time Filters:</h4>
                     <br></br>
                     <div>
+                    <Box sx={{ minWidth: 145 }}>
+
+                    <FormControl fullWidth>
+                    <InputLabel id="demo-simple-select-label">Cooking Time</InputLabel>
+
+                    <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    // value={age}
+                    label="CookingTime">
+
                         {cookingTimes?.map(ct =>
 
-                            ct.cooking_time != null ? (<Button key={ct.id} value={ct.id}
+                            ct.cooking_time != null ? (<MenuItem key={ct.id} value={ct.id}
                                                                onClick={() => {
                                                                    console.log(ct.cooking_time, " COOK");
                                                                    handleTimeSelect(ct.cooking_time)
                                                                }}>
                                 {ct.cooking_time + " Minutes"}
-                            </Button>) : (<></>)
+                            </MenuItem>) : (<></>)
                         )}
+
+                    </Select>
+                    </FormControl>
+                    </Box>
+
                     </div>
 
                 </div>
