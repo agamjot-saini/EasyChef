@@ -138,12 +138,7 @@ const HomePage = () => {
 
     }
 
-// export default function BasicSelect() {
-  const [age, setAge] = useState('');
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
     return (
         <div>
             
@@ -155,7 +150,26 @@ const HomePage = () => {
 
                 <div style={{display: "flex", justifyContent: "center"}}>
 
+                {/* <div> */}
+                    {/* <div style={{display: "flex", justifyContent: "center"}}> */}
+                    <Box sx={{ minWidth: '70ch' }}>
+
+
+                        <TextField label="Search recipes, ingredients, or creators" 
+                            style={{display: "flex", textAlign: "center", width: "100%"}}
+                            type="text" value={search} 
+                            onChange={(e) => setSearch(e.target.value)}/>
+                            
+                    </Box>
+
+                    {/* </div> */}
+
+
+                {/* </div> */}
+
+
                     <div>
+                        
                         <Box sx={{ minWidth: 100 }}>
 
                         <FormControl fullWidth>
@@ -231,28 +245,12 @@ const HomePage = () => {
 
                 </div>
 
-                <br></br>
-                
-                <Box sx={{ minWidth: 160 }}>
-                <div style={{display: "flex", justifyContent: "center"}}>
-
-                <br></br>
-                <div>
-
-                <TextField label="Search recipes, ingredients, or creators" style={{display: "flex", textAlign: "center", width: "100%"}}
-                       type="text" value={search} onChange={(e) => setSearch(e.target.value)}/>
-
-                {recipes.length ? (<RecipeList recipes={recipes}/>) : <div>No Recipes</div>}
-                </div>
-                </div>
-
-                </Box>
-
-
-                <br></br>
-
             </Box>
+            <div style={{display: "flex", justifyContent: "center"}}>
 
+            {recipes.length ? (<div style={{display: "flex", textAlign: "center", width: "100%"}}><RecipeList  recipes={recipes}/></div>) : <div>No Recipes</div>}
+            
+            </div>
 
         </div>
     )
