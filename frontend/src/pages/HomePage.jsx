@@ -148,36 +148,15 @@ const HomePage = () => {
         <div>
             
             <h1 style={{display: "flex", justifyContent: "center"}}>Welcome to EasyChef</h1>
-            
-            {/* <Box sx={{ minWidth: 120 }}>
-                <FormControl fullWidth>
-                    <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                    <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={age}
-                    label="Age"
-                    onChange={handleChange}
-                    >
-                    <MenuItem value={10}>Ten</MenuItem>
-                    <MenuItem value={20}>Twenty</MenuItem>
-                    <MenuItem value={30}>Thirty</MenuItem>
-                    </Select>
-                </FormControl>
-            </Box> */}
-
-            
-            
+                        
             <Box sx={{width: '100%', bgcolor: 'background.paper'}}>
 
                 <h3 style={{display: "flex", justifyContent: "center"}}>Search Recipes</h3>
 
                 <div style={{display: "flex", justifyContent: "center"}}>
 
-                    {/* <h4>Cuisine Filters:</h4> */}
-                    {/* <br></br> */}
                     <div>
-                        <Box sx={{ minWidth: 120 }}>
+                        <Box sx={{ minWidth: 100 }}>
 
                         <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">Cuisine</InputLabel>
@@ -204,7 +183,7 @@ const HomePage = () => {
 
                     <br></br>
                     <div>
-                    <Box sx={{ minWidth: 120 }}>
+                    <Box sx={{ minWidth: 75 }}>
 
                     <FormControl fullWidth>
                     <InputLabel id="demo-simple-select-label">Diet</InputLabel>
@@ -212,7 +191,6 @@ const HomePage = () => {
                     <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                        // value={age}
                         label="Diet">
 
                         {/* {diets?.map(d => <MenuItem value="">
@@ -247,7 +225,6 @@ const HomePage = () => {
                     <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
-                    // value={age}
                     label="CookingTime">
 
                         {cookingTimes?.map(ct =>
