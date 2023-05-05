@@ -178,8 +178,12 @@ const HomePage = () => {
                         <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
-                        // value={age}
+                        // value={"ALL"}
                         label="Cuisine">
+                            <MenuItem key={"ALL"} value={"ALL"} onClick={() => {
+                                // console.log(cui.id, "CUISINE")
+                                searchRecipes()
+                            }}>{"ALL"}</MenuItem>
                             {cuisines?.map(cui => (<MenuItem key={cui.id} value={cui.id} onClick={() => {
                                 console.log(cui.id, "CUISINE")
                                 handleCuisineSelect(cui.id)
@@ -199,12 +203,13 @@ const HomePage = () => {
                     <Select
                         labelId="demo-simple-select-label"
                         id="demo-simple-select"
+                        // value={"ALL"}
                         label="Diet">
 
-                        {/* {diets?.map(d => <MenuItem value="">
-                            <em>All</em>
-                            {searchRecipes()}
-                        </MenuItem>)} */}
+                        <MenuItem key={"ALL"} value={"ALL"} onClick={() => {
+                            // console.log(cui.id, "CUISINE")
+                            searchRecipes()
+                        }}>{"ALL"}</MenuItem>
 
                         {diets?.map(diet => (<MenuItem key={diet.id} value={diet.id} onClick={() => {
                             console.log(diet.id, "DIET")
@@ -225,6 +230,10 @@ const HomePage = () => {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     label="CookingTime">
+                        <MenuItem key={"ALL"} value={"ALL"} onClick={() => {
+                            // console.log(cui.id, "CUISINE")
+                            searchRecipes()
+                        }}>{"ALL"}</MenuItem>
 
                         {cookingTimes?.map(ct =>
 
